@@ -14,8 +14,8 @@ urlpatterns = [
     path('api/<int:pk>/', views.student_api),
 
     # class based
-    path('Api/', views.StudentApi.as_view()),
-    path('Api/<int:pk>/', views.StudentApi.as_view()),
+    path('my/', views.StudentApi.as_view()),
+    path('my/<int:pk>/', views.StudentApi.as_view()),
 
     # class based with viewset and router
     path('', include(router.urls))
